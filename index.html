@@ -8,9 +8,26 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+<script>
+    function Add() {
+        document.fm1.T3.value = eval(document.fm1.T1.value) + eval(document.fm1.T2.value);
+    }
+</script>
+</head>
   <body>
-      
+      <p class="text-center">
+        <FORM name="fm1" class="text-center">
+        <div class="container mb-4">けいさん</div>
+        
+            <input size="4" type="text" name="T1">+
+            <input size="4" type="text" name="T2">
+            <input type="button" value="=" onclick="Add()">
+            <input size="8" type="text" name="T3">
+        </FORM>
+        <form name="fm2" class="text-center">
+        </form>
+      </p>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
