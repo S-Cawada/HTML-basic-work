@@ -12,20 +12,44 @@
     function Add() {
         document.fm1.T3.value = eval(document.fm1.T1.value) + eval(document.fm1.T2.value);
     }
+    function minus() {
+        document.fm2.T6.value = eval(document.fm2.T4.value) - eval(document.fm2.T5.value);
+    }
+        function multi() {
+        document.fm3.T9.value = eval(document.fm3.T8.value) * eval(document.fm3.T7.value);
+    }
+    function devide() {
+        document.fm4.T12.value = eval(document.fm4.T11.value) / eval(document.fm4.T10.value);
+        }
 </script>
 </head>
   <body>
       <p class="text-center">
-        <FORM name="fm1" class="text-center">
-        <div class="container mb-4">けいさん</div>
-        
+        <div class="container mb-4 text-center">けいさん</div>
+        <FORM name="fm1" class="text-center mb-4">
             <input size="4" type="text" name="T1">+
             <input size="4" type="text" name="T2">
             <input type="button" value="=" onclick="Add()">
             <input size="8" type="text" name="T3">
         </FORM>
-        <form name="fm2" class="text-center">
-        </form>
+        <FORM name="fm2" class="text-center mb-4">
+          <input size="4" type="text" name="T4">-
+          <input size="4" type="text" name="T5">
+          <input type="button" value="=" onclick="minus()">
+          <input size="8" type="text" name="T6">
+      </FORM>
+      <FORM name="fm3" class="text-center mb-4">
+        <input size="4" type="text" name="T7">*
+        <input size="4" type="text" name="T8">
+        <input type="button" value="=" onclick="multi()">
+        <input size="8" type="text" name="T9">
+    </FORM>
+    <FORM name="fm4" class="text-center mb-4">
+      <input size="4" type="text" name="T10">/
+      <input size="4" type="text" name="T11">
+      <input type="button" value="=" onclick="devide()">
+      <input size="8" type="text" name="T12">
+  </FORM>
       </p>
 
     <!-- Optional JavaScript -->
